@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="utf-8">
+    <title>Involve.Asia</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+    <div class="content">
+    <h3>Add Revenue Group</h3>
+    <p>Revenue Group Title </br>
+    <input type="text" name="plainText"></p>
+    <p>if <select id="condition">
+                <option>All</option>
+                <option>One</option>
+                <option>Two</option>
+                <option>Three</option>
+                </select> Of the below condition are met</p>
+
+<div class="container">
+               <td> RULE <span id="addRule"></span></td>
+               <td> <select id="dropdown-aff_sub">
+                <option>aff_sub</option>
+                <option>aff_sub1</option>
+                <option>aff_sub2</option>
+                <option>aff_sub3</option>
+                </select> </td>
+                <td> <select id="dropdown-be">
+                <option>is</option>
+                <option>are</option>
+                </select></td> 
+
+    <td><input type="text" name="name" placeholder="insert parameter"></td>
+    <button id="addRow">+</button> 
+    <table>
+        <table>
+        <tbody>
+            <tr>
+        
+            </tr>
+        </tbody>
+        </table>
+ </div>
+
+ <p>The revenue is <input type="number" id="revenueNumber" placeholder="%"></p>
+
+ <input type="button" value="Confirm"id="confirm" onclick="confirmFunction()">
+ <input type="button" value="Concel" id="concel" onclick="concelFunction()">
+ 
+</div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <script type="text/javascript">
+
+var html = '<tr><td>RULE</td><td><select id="dropdown-aff_sub" name="dropdown-aff_sub"><option>aff_sub</option><option>aff_sub1</option><option>aff_sub2</option><option>aff_sub3</option></select> </td><td> <select id="dropdown-be" name="dropdown-be"><option>is</option><option>are</option></select></td><td><input type="text" name="name"placeholder="insert parameter"></td><td><button class="remove">-</button></td></tr>';
+
+
+$(function() {
+
+    $('#addRow').click(function(){
+        $('tbody').append(html);
+    });
+ 
+    $(document).on('click', '.remove', function() {
+        $(this).parents('tr').remove();
+    });   
+ 
+});
+
+    function addone(){
+          var foo = document.getElementById('addRule').innerHTML;
+          foo++;
+          document.getElementById('addRule').innerHTML = foo;
+        }
+
+function confirmFunction() {
+  alert("You have been confirmed!");
+}
+
+function concelFunction() {
+  alert("You have conceled!");
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

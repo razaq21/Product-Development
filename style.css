@@ -1,0 +1,109 @@
+
+        html {
+            min-height:100%;
+            background:linear-gradient(0deg,rgba(0,0,0,1.0),rgba(0,0,0,0.12)),url(http://lorempixel.com/800/600/nature/2);
+            background-size:cover;
+        }
+        
+        body{
+            margin:0;
+            padding:0;
+        }
+
+        .overlay{
+            opacity:.5;
+
+        }
+        .content{
+            position: center;
+            width: 685px;
+            margin: 100px auto;
+            background-color: white;
+            padding: 1px 30px;
+            z-index: 23;
+        }
+
+        select[id="condition"]{
+            width: 90px;
+            height: 25px;
+            border-radius: 4px;
+        }
+        
+        .container {
+            width: 665px;
+            margin: 40px  -30px;
+            background-color:#7FFFD4;
+            padding: 40px;
+            z-index: 1;
+        }
+
+        input {
+            width: 350px;
+            font-size: 12px;
+            margin: 10px;
+            padding: 4px;
+            border-radius: 4px;
+
+        }
+
+        select[id="dropdown-aff_sub"]{
+            width: 90px;
+            height: 25px;
+            border-radius: 4px;
+        }
+        select[id="dropdown-be"]{
+            width: 90px;
+            height: 25px;
+            border-radius: 4px;
+        }
+
+         tr{
+
+            width: 80px;
+            height: 30px;
+            border-radius: 4px;
+        }
+
+        .remove {
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            background-color: tomato;
+            color: white;
+            border: none;
+            border-radius: 15px;
+        }
+        #addRow{
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            background-color: lightseagreen;
+            color: white;
+            border: none;
+            border-radius: 15px;
+        }
+
+        input[id="revenueNumber"]{
+            width: 150px;
+
+        }
+        input[id=confirm]{
+            width:90px;
+            height: 35px;
+            background-color: #D2691E;
+            color: #ffffff;
+        }
+
+        input[id=concel]{
+            width:90px;
+            height: 35px;
+            background-color: #696969;
+            color: #ffffff;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+        tr:hover {
+            cursor: move;
+        }
